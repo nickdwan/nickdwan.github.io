@@ -1,0 +1,76 @@
+html,
+body{
+	height: 100%;
+}
+
+body{
+	background: rgb(250,50,50);
+	font-family: calibri, arial, sans-serif;
+	background-image: url(../images/bg.jpg);
+	background-repeat: no-repeat;
+	background position: 50% 50%;
+	background-size: cover;
+}
+.main{
+	/*info about the style of this class goes here: structure comments and information in CSS that won't render*/
+	background-color: rgba(255,255,255,0.75);
+	border-radius: 50px;
+	max-width: 600px;
+	margin: 0 auto; /*margin 0 auto, centers the main box within the page*/
+	padding: 30px;
+}
+h1{
+	font-family: 'Dosis', sans-serif;
+	font-family: 'Francois One', sans-serif; /*referencing to the google font refered to in the header within the html code*/
+	text-shadow: 10px 10px 10px grey;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+h2{
+	text-align: center;
+	margin-top: 0;
+	font-weight: normal;
+	letter-spacing: 5px;
+	font-size-adjust: 10px;	
+}
+h3{
+	font-family: 'Dosis', sans-serif;
+	font-family: 'Francois One', sans-serif;
+	margin-bottom: 0; /*removing the bottom margin helps the jquery run cleaner and jumping*/
+}
+
+/*command below is saying find the h3 elements and then apply the following rule to everything subservient like lists after it. you'd only need to use this rule if not using jquery to toggle h3 content*/
+h3+*{
+	display: none;
+}
+
+h3:hover {
+			cursor: pointer;
+			text-decoration: underline;
+}
+img{
+	display: block;
+	margin: 0 auto; /*margin 0 auto, centers the image within box*/
+	border: 40px grey;
+	border-radius: 40px;
+}
+p,
+ul,
+ol {
+	line-height: 1.6;
+	list-style: none;
+	padding-left: 20px;
+}
+a{
+	color: blue;
+	font-weight: bold;
+	text-decoration: none;
+}
+a:hover {
+	/*this section is telling what to happen when the user hovers over the element 'a' in the html code*/
+	text-decoration: underline;
+	transform: rotateZ(360deg);
+	display: inline-block;
+	transition: transform 500ms;
+}  

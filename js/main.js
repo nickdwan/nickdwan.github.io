@@ -41,7 +41,10 @@ function askQuestions(){
 
 /*hey jquery, when the page has loaded, do the following things inside the curly brackets*/
 $(function() {
-	
+	$('img').on('click', askQuestions);
+
+
+
 	/*hello jquery, when the user clicks an h3 element run the following code inside the curly brackets*/
 	$('h3').on('click', function(){
 
